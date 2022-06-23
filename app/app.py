@@ -113,6 +113,11 @@ def module_to_table_legend(argument):
 
 
 
+@app.route("/custom_route")
+def home_view():
+		return "<h1>Welcome to Geeks for Geeks</h1>"
+
+
 ## Dummy route to check functioning of api
 @app.route('/data/api/v1.0/tasks', methods=['GET'])
 @cross_origin()
